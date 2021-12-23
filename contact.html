@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="style.css">
+   <link rel="stylesheet" href="form.css">
+    <title>Document</title>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo-title">RENTMENOW</div>
+        <a href="#" class="toggle-button">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </a>
+        <div class="navbar-links">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">Gallory</a></li>
+                <li><a href="#">Reservation</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container-form">
+        <form class="form">
+            <div class="pageTitle title">SEND US Message </div>
+            <div class="secondaryTitle title">Please fill this form </div>
+            <input type="text" id="name" class="name formEntry" placeholder="Name" />
+            <input type="text" id="email" class="email formEntry" placeholder="Email"/>
+            <textarea class="message formEntry" id="message" placeholder="Message"></textarea>
+            <button class="submit formEntry" onclick="envoyer()">Submit</button>
+          </form>
+    </div>
+  
+    
+    <script src="script.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+</html>

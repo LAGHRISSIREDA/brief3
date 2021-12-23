@@ -1,0 +1,450 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,700;0,800;0,900;1,100;1,200;1,800&display=swap');
+
+*{
+    box-sizing: border-box;
+    padding: 0%;
+    margin: 0%;
+}
+body{
+    width: 100%;
+    font-family: 'Poppins', sans-serif;
+    background-color: white;
+ 
+}
+/* ----------------------------------------------------------navbar */
+.navbar{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    background-color: #333;
+    color: white;
+}
+
+.logo-title{
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    color: #f44336;
+    font-size: 1.5rem;
+    margin: .5rem;
+}
+
+.navbar-links ul{
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.navbar-links li{
+    list-style: none;
+}
+
+.navbar-links li a{
+    text-decoration: none;
+    color: white;
+    padding: 1rem;
+    display: block;
+}
+
+.navbar-links li:hover{
+    background-color: #555;
+}
+
+.toggle-button{
+    position: absolute;
+    top: .75rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 38px;
+    height: 21px;
+}
+
+.toggle-button .bar{
+    height: 3px;
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+}
+/* -----------------------------------------------container-body */
+.container section:nth-of-type(1){
+   position: relative;
+   border-bottom: 1rem solid black;
+}
+.container section img{
+    width: 100%;
+    
+}
+
+.container section .presentation{
+    position: absolute;
+    color: white;
+    width: 50%;
+    top: 15%;
+    left: 40px;
+    text-align: justify;
+}
+
+.container section .presentation h1,.container section .presentation h3{
+    color: #f44336;
+    font-size: 2rem;
+    text-align: center;
+    font-weight: bolder;
+    margin-bottom: .75rem;
+}
+
+.container section .presentation p{
+    font-size: 1rem;
+}
+
+.button{
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 10px 30px;
+    background-color: #f44336;
+    color: white;
+    border-radius: 50px;
+    cursor: pointer;
+    margin-top: .75rem;
+}
+
+
+
+.container .services{
+
+    padding: 3rem 0;
+    border-bottom: 1rem solid black;
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.container .services div{
+    width: 30%;
+    display: flex;
+    padding: 1rem 1rem;
+    border-radius: 2rem;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 1px 2px 9px #222222;
+}
+
+.container .services div img{
+    width: 10rem;
+    background-color: #f44336;
+    padding: 1rem 1rem;
+    border-radius: 3rem;
+    height: 10rem;
+}
+.container .services div p{
+    text-align: justify;
+    font-family: 'Poppins', sans-serif;
+    color: black;
+   
+}
+
+.container .services div h3{
+    text-align: justify;
+    color: #f44336;
+    font-family: 'Poppins', sans-serif;
+    font-size: 2rem;
+}
+
+.container .testimonials{
+    padding: 3rem 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1rem solid black;
+}
+
+.container .testimonials h2{
+    color: #f44336;
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 1.5rem;
+    font-weight: bolder;
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+
+.container .testimonials .persons{
+    display: flex;
+    justify-content: space-around;
+}
+
+.container .testimonials .persons .person{
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 3rem;
+    align-items: center;
+}
+
+.container .testimonials .persons .person p{
+    text-align: justify;
+}
+
+.container .testimonials .persons .person img{
+    width: 10rem;
+    border-radius: 50%;
+}
+
+/* ---------------------------------------fooooter */
+
+footer{
+    width: 100%;
+    height: 10rem;
+    background-color: RGB(60, 61, 65);
+    color: white;
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+}
+
+footer div{
+    width: 10%;
+}
+
+footer div h4{
+    padding: .5rem;
+}
+
+footer div ul li{
+    list-style: none;
+}
+
+footer div ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: .6rem;
+}
+
+footer div .icon{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+footer div button{
+    padding: .4rem 1rem;
+    margin-top: .2rem;
+    color: white;
+    background-color: #f44336;
+    border-radius: 15px;
+}
+
+footer .icons{
+    display: flex;
+    flex-direction: column;
+    align-items: c;
+}
+
+.navbar-links li:hover{
+    transform: scale(1.2);
+}
+
+
+/* --------------respon------------------ */
+@media only screen and (max-width:1110px){
+
+    
+    .container section .presentation{
+        width: 90%;
+        top: 10%;
+        left: 1%;
+    }
+
+    .container section .presentation h1,.container section .presentation h3{
+        font-size: 1.6rem;
+    }
+    
+    .container section .presentation p{
+        font-size: .9rem;
+    }
+    
+
+.button{
+    font-size: .7rem;
+    padding: 10px 25px;
+}
+
+/* --------------------------------------bodyy */
+.container .services div{
+    width: 25%;
+    padding: .5rem .5rem;
+}
+
+
+.container .services div img{
+    width: 8rem;
+    background-color: #f44336;
+    padding: 1rem 1rem;
+    border-radius: 3rem;
+    height: 8rem;
+}
+.container .services div p{
+    text-align: justify;
+    font-size: .7rem;
+    font-family: 'Poppins', sans-serif;
+    color: black;
+   
+}
+
+.container .services div h3{
+    font-size: 1.6rem;
+}
+
+/* ---------------------------------------fooooter */
+
+
+footer div{
+    width: 10%;
+}
+
+footer div button{
+    padding: .2rem .1rem;
+    border-radius: 10px;
+}
+footer div h4{
+    font-size: .9rem;
+}
+
+footer div ul li{
+    list-style: none;
+}
+
+footer div ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: .6rem;
+}
+}
+
+@media only screen and (max-width:754px){
+
+    .container section .presentation{
+        width: 90%;
+        top: 9%;
+    }
+
+    .container section .presentation h1,.container section .presentation h3{
+        font-size: 1.5rem;
+    }
+    
+    .container section .presentation p{
+        font-size: .5rem;
+    }
+    
+
+.button{
+    font-size: .7rem;
+    padding: 5px 15px;
+}
+
+
+
+/* ---------------------------------------fooooter */
+
+
+footer div{
+    width: 19%;
+}
+
+footer div button{
+    padding: .2rem .5rem;
+    border-radius: 15px;
+}
+
+}
+
+
+@media only screen and (max-width:522px) {
+    body{
+        width: 522px;
+    }
+    .toggle-button{
+        display: flex;
+    }
+
+    .navbar-links{
+        display: none;
+        width: 100%;
+    }
+
+    .navbar{
+      
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar-links ul{
+        width: 100%;
+        flex-direction: column;
+       
+    }
+
+    .navbar-links ul li{
+        text-align: center;
+    }
+
+    .navbar-links li a{
+        padding: .5rem 1rem;
+    }
+
+    .navbar-links.active{
+        display: flex;
+    }
+
+    /* -------------------------------------contenu */
+  .container .testimonials{
+       display: none;
+   }
+   .container .services div{
+    width: 25%;
+    padding: .5rem .5rem;
+}
+
+
+.container .services div img{
+    width: 5rem;
+    height: 5rem;
+}
+
+.container .services{
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container .services div p{
+    font-size: .5rem; 
+}
+
+.container .services div{
+    width: 60%;
+    margin: 1rem auto;
+}
+
+.container .services div h3{
+    font-size: 1rem;
+}
+
+
+   footer{
+    height: 10rem;
+    padding: 0 1rem;
+    justify-content: space-between;
+   }
+
+   footer div{
+    width: 19%;
+}
+
+footer div button{
+    padding: .2rem .5rem;
+    border-radius: 15px;
+}
+    
+}
