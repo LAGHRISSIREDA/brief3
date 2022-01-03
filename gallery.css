@@ -2,14 +2,18 @@
     min-height: 100vh;
     display: grid;
     padding: 0 1rem;
+    margin-bottom: 1rem;
     grid-template-columns: repeat(3,1fr);
     gap: 1rem;
 }
 
 .box{
+    padding: 1rem;
     color: white;
     display: flex;
+    border-radius: 5px;
     flex-direction: column;
+    box-shadow: 1px 1px 20px black;
     justify-content: center;
 }
 
