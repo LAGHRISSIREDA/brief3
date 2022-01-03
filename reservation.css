@@ -1,0 +1,102 @@
+label,h2,.result{
+    color: white;
+}
+
+.groupe,.type,.radio-type{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+}
+
+.radio-type{
+  margin: 2rem 0;
+}
+
+.cacher{
+    width: 90%;
+    height: 8rem;
+    position: absolute;
+    background-color: rgba(240, 240, 240, 0.582);
+    top: 57%;
+    right: 5%;
+    border-radius: 50px;
+    
+}
+
+.new,.types{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.number{
+    text-align: center;
+    padding: 10px 1rem;
+    font-family: sans-serif;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 15px;
+}
+
+.days{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+button{
+    padding: .3rem 2rem;
+    background-color: rgb(6, 212, 85);
+    color: white;
+    font-family: sans-serif;
+    font-weight: bold;
+    border-radius: 15px;
+}
+
+button:hover{
+    transform: scale(1.1);
+}
+
+.result{
+    font-size: 1rem;
+    font-family: sans-serif;
+    font-size: 1.9rem;
+    color: rgb(243, 1, 1);
+    animation: tours 1s infinite;
+    padding: .5rem;
+}
+
+@keyframes tours {
+    0%{color:rgb(243, 1, 1);}
+    25%{color: rgb(1, 235, 243);}
+    50%{color: rgb(108, 10, 165);}
+    75%{color: rgb(21, 243, 1);}
+    100%{color: rgb(243, 1, 1);}
+}
+
+.genre-essance{
+    display: flex;
+    gap: 1.5rem;
+}
+
+.genre-essance div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h2,.genre-ma,.titre{
+    color: rgb(243, 1, 1);
+    font-size: 1.8rem;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+}
+
+.iconss{
+    color: rgb(243, 1, 1);
+    font-size: 3rem;
+}
+
