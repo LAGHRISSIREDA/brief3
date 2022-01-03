@@ -1,39 +1,48 @@
+.container-resarvation{
+    width: 60%;
+    font-family: sans-serif;
+
+    font-weight: bold;
+    padding: 1rem 2px;
+    margin: 1rem auto;
+    background-color: rgba(50, 46, 53, 0.452);
+    box-shadow: 1px 1px 20px black;
+    border-radius: 50px;
+
+}
+
+
 label,h2,.result{
     color: white;
 }
 
-.groupe,.type,.radio-type{
+.groupe,.radio-type{
     display: flex;
     flex-direction: column;
     gap: 1rem;
     align-items: center;
 }
 
-.radio-type{
-  margin: 2rem 0;
-}
 
-.cacher{
-    width: 90%;
-    height: 8rem;
-    position: absolute;
-    background-color: rgba(240, 240, 240, 0.582);
-    top: 57%;
-    right: 5%;
-    border-radius: 50px;
-    
-}
 
-.new,.types{
-    display: flex;
+.new{
+   
+    display: flex;  
     justify-content: center;
     align-items: center;
     gap: 1rem;
+    
+}
+
+
+.types{
+    display: flex;
+    gap: 2rem;
 }
 
 .number{
     text-align: center;
-    padding: 10px 1rem;
+    padding: 1px 1rem;
     font-family: sans-serif;
     font-size: 1rem;
     font-weight: bold;
@@ -57,6 +66,8 @@ button{
 
 button:hover{
     transform: scale(1.1);
+    box-shadow: 1px 2px 5px rgba(255, 2, 65, 0.356);
+    cursor: pointer;
 }
 
 .result{
@@ -98,5 +109,29 @@ h2,.genre-ma,.titre{
 .iconss{
     color: rgb(243, 1, 1);
     font-size: 3rem;
+}
+
+
+@media only screen and (max-width:1110px){
+    .types{
+        flex-direction: column;
+        gap: .1rem;
+    }
+    .type{
+        flex-direction: column;
+         gap: 0rem;
+         justify-content: center;
+         padding: .1rem;
+        
+    }
+
+    .result{
+        font-size: 1rem;
+    }
+
+    .iconss{
+        font-size: 2.5rem;
+    }
+   
 }
 

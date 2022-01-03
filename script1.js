@@ -3,7 +3,6 @@
 function choose(){
  var  var1 = document.getElementsByName('man-aut');
    var radioType = document.getElementsByClassName('type');
-    document.getElementById('hide').style.display='none';
     if(var1[0].checked){
        for(let i=0;i<radioType.length;i++)
          radioType[i].style.display='block';

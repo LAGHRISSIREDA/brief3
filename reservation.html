@@ -27,73 +27,75 @@
             </ul>
         </div>
     </nav>
+
     <div>
         <img src="images/reservation.jpg" alt="">
     </div>
     <div class="container-resarvation">
+
         <div class="man-aut new">
             <div class="groupe">
                 <label for="manuel">Manuel</label>
                 <input type="radio" value="0" name="man-aut" id="manuel"  onclick="choose()" >
             </div>
             <div class="groupe">
-                <label for="manuel">Automatic</label>
+                <label for="automatic">Automatic</label>
                 <input type="radio" value="0.19" name="man-aut" id="automatic"  onclick="choose()">
             </div>
         </div>
-        <div id="hide" style="display: none;" class="cacher">
 
-        </div>
         <div class="radio-type new">
             <div><h2>Proposed vehicles</h2></div>
             <div class="types">
                 <div class="type1 type">
-                    <label for="Citadine">Citadine</label>
-                    <input type="radio" name="radio-type" id="citadine" value="12" onclick="chooseCars()">
+                    <label for="citadine">Citadine</label>
+                    <input type="radio" class="radioButton" name="radio-type" id="citadine" value="12" onclick="chooseCars()">
                 </div>
                 <div class="type type">
                     <label for="compact">Compact</label>
-                    <input type="radio" name="radio-type" id="compact" value="14" onclick="chooseCars()">
+                    <input type="radio" class="radioButton" name="radio-type" id="compact" value="14" onclick="chooseCars()">
                 </div>
                 <div class="type3 type">
-                    <label for="barline">Berline</label>
-                    <input type="radio" name="radio-type" id="berline" value="20" onclick="chooseCars()">
+                    <label for="berline">Berline</label>
+                    <input type="radio" class="radioButton" name="radio-type" id="berline" value="20" onclick="chooseCars()">
                 </div>
                 <div class="type4 type">
                     <label for="utilitaire">Utilitaire</label>
-                    <input type="radio" name="radio-type" id="utilitaire" value="16" onclick="chooseCars()">
+                    <input type="radio" class="radioButton" name="radio-type" id="utilitaire" value="16" onclick="chooseCars()">
                 </div>
                 <div class="type5 type">
                     <label for="engin-de-chantier">Engin De Chantier</label>
-                    <input type="radio" name="radio-type" id="engin-de-chantier" value="900" onclick="chooseCars()">
+                    <input type="radio" class="radioButton" name="radio-type" id="engin-de-chantier" value="900" onclick="chooseCars()">
                 </div>
                 <div class="type6 type">
                     <label for="camion">Camion</label>
-                    <input type="radio" name="radio-type" id="camion" value="250" onclick="chooseCars()">
+                    <input type="radio" class="radioButton" name="radio-type" id="camion" value="250" onclick="chooseCars()">
                 </div>
+            </div>
 
-            </div>
+
             <div class="genre-ma">
-                <h3>Energy associated</h3>
+                <h2>Energy associated</h2>
             </div>
-            <div class="genre-essance">
+            <div class="genre-essance new">
                 <div class="gazoil">
                         <label for="electrique">Electrique</label>
-                        <input type="radio" class="electric" name="genre" value="0.05">
+                        <input type="radio" id="electrique" class="electric" name="genre" value="0.05">
                 </div>
                 <div class="gazoil">
                         <label for="hybride">Hybride</label>
-                        <input type="radio" class="hybride" name="genre" value="0.09">
+                        <input type="radio" id="hybride" class="hybride" name="genre" value="0.09">
                 </div>
                 <div class="gazoil">
                         <label for="essance">Essance</label>
-                        <input type="radio" class="essance" name="genre" value="0.14">
+                        <input type="radio" id="essance" class="essance" name="genre" value="0.14">
                 </div>
                 <div class="gazoil">
                         <label for="diesel">Diesel</label>
-                        <input type="radio" class="diesel" name="genre" value="0.21">
+                        <input type="radio" id="diesel" class="diesel" name="genre" value="0.21">
                 </div>
             </div>
+            
             <div class="new days">
                 <label for="Jour" class="titre">Days location</label>
                 <input type="number" min="1" value="1" class="number" id="number" >
@@ -102,8 +104,8 @@
                 <button onclick="display()" >Validate</button>
             </div>
             <div class="new">
-                <ion-icon style="display: none;" id="money" class="iconss" name="cash-outline"></ion-icon>
-                <div id="result"  class="result"></div>
+                <ion-icon style="color: rgb(168, 235, 168);" id="money" class="iconss" name="cash-outline"></ion-icon>
+                <div id="result"  class="result">Cost to be payed is :</div>
             </div>
         </div>
     </div>
