@@ -423,11 +423,13 @@ footer div button{
    }
 
    .container section .presentation h1,.container section .presentation h3{
-    color: #000000;
+    color: #f44336;
 }
 
    .container section .presentation{
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
 }
    .container .cover img{
     opacity: 65%;
@@ -478,5 +480,7 @@ footer div button{
     padding: .2rem .5rem;
     border-radius: 15px;
 }
+
+
     
 }

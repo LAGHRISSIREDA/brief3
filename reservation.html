@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="form.css">
+    <link rel="stylesheet" href="gallery.css">
+    <link rel="stylesheet" href="reservation.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo-title">RENTMENOW</div>
+        <a href="#" class="toggle-button">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </a>
+        <div class="navbar-links">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="gallery.html">Gallory</a></li>
+                <li><a href="reservation.html">Reservation</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div>
+        <img src="images/reservation.jpg" alt="">
+    </div>
+    <div class="container-resarvation">
+        <div class="man-aut new">
+            <div class="groupe">
+                <label for="manuel">Manuel</label>
+                <input type="radio" value="0" name="man-aut" id="manuel"  onclick="choose()" >
+            </div>
+            <div class="groupe">
+                <label for="manuel">Automatic</label>
+                <input type="radio" value="0.19" name="man-aut" id="automatic"  onclick="choose()">
+            </div>
+        </div>
+        <div id="hide" style="display: none;" class="cacher">
+
+        </div>
+        <div class="radio-type new">
+            <div><h2>Proposed vehicles</h2></div>
+            <div class="types">
+                <div class="type1 type">
+                    <label for="Citadine">Citadine</label>
+                    <input type="radio" name="radio-type" id="citadine" value="12" onclick="chooseCars()">
+                </div>
+                <div class="type type">
+                    <label for="compact">Compact</label>
+                    <input type="radio" name="radio-type" id="compact" value="14" onclick="chooseCars()">
+                </div>
+                <div class="type3 type">
+                    <label for="barline">Berline</label>
+                    <input type="radio" name="radio-type" id="berline" value="20" onclick="chooseCars()">
+                </div>
+                <div class="type4 type">
+                    <label for="utilitaire">Utilitaire</label>
+                    <input type="radio" name="radio-type" id="utilitaire" value="16" onclick="chooseCars()">
+                </div>
+                <div class="type5 type">
+                    <label for="engin-de-chantier">Engin De Chantier</label>
+                    <input type="radio" name="radio-type" id="engin-de-chantier" value="900" onclick="chooseCars()">
+                </div>
+                <div class="type6 type">
+                    <label for="camion">Camion</label>
+                    <input type="radio" name="radio-type" id="camion" value="250" onclick="chooseCars()">
+                </div>
+
+            </div>
+            <div class="genre-ma">
+                <h3>Energy associated</h3>
+            </div>
+            <div class="genre-essance">
+                <div class="gazoil">
+                        <label for="electrique">Electrique</label>
+                        <input type="radio" class="electric" name="genre" value="0.05">
+                </div>
+                <div class="gazoil">
+                        <label for="hybride">Hybride</label>
+                        <input type="radio" class="hybride" name="genre" value="0.09">
+                </div>
+                <div class="gazoil">
+                        <label for="essance">Essance</label>
+                        <input type="radio" class="essance" name="genre" value="0.14">
+                </div>
+                <div class="gazoil">
+                        <label for="diesel">Diesel</label>
+                        <input type="radio" class="diesel" name="genre" value="0.21">
+                </div>
+            </div>
+            <div class="new days">
+                <label for="Jour" class="titre">Days location</label>
+                <input type="number" min="1" value="1" class="number" id="number" >
+            </div>
+            <div class="new">
+                <button onclick="display()" >Validate</button>
+            </div>
+            <div class="new">
+                <ion-icon style="display: none;" id="money" class="iconss" name="cash-outline"></ion-icon>
+                <div id="result"  class="result"></div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div>RENMENOW</div>
+        <div>
+            <h4>Get Started</h4>
+            <ul>
+                <li><a href="index.html">Home</a> </li>
+                <li><a href="#">sign up</a> </li>
+                <li><a href="#">downloads</a> </li>
+                
+            </ul>
+        </div>
+        <div>
+            <h4>About us</h4>
+            <ul>
+                <li><a href="#">Company</a> </li>
+                <li><a href="#">Contact us</a> </li>
+                <li><a href="#">Reviews</a> </li>
+                
+            </ul>
+        </div>
+        <div>
+            <h4>Support</h4>
+            <ul>
+                <li><a href="#">FAQ</a> </li>
+                <li><a href="#">Help desk</a> </li>
+                <li><a href="#">Forum</a> </li>
+                
+            </ul>
+        </div>
+        <div class="icons">
+            <div class="icon">
+                <ion-icon name="logo-twitter"></ion-icon>
+                <ion-icon name="logo-youtube"></ion-icon>
+                <ion-icon name="logo-facebook"></ion-icon>
+                <ion-icon name="logo-google"></ion-icon>
+            </div>
+            <button class="btn">Contact Us</button>
+            </div>
+        </div>
+    </footer>
+    <script src="script1.js"></script>
+    <script src="script.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+</html>
